@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Employee.Services.Interface;
 using Employee.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Employee.Controller
 {
-
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class EmployeeController : ControllerBase
